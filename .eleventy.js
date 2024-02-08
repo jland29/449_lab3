@@ -2,4 +2,10 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("styles");
+
+  eleventyConfig.addShortcode("author", function(firstName, lastName) {
+    return `<div class="author"> 
+    By: ${firstName} ${lastName}
+    </div>`;
+  });
 };

@@ -1,5 +1,5 @@
 ---
-title: 11ty Boilerplate
+title: The Galactic Exploration Blog
 ---
 
 <!DOCTYPE html>
@@ -11,12 +11,23 @@ title: 11ty Boilerplate
   <link rel="stylesheet" href="/styles/screen.css">
 </head>
 <body>
+  <header>
+    <div class="head">
+      <h3>Welcome explorers...</h3>
+    </div>
+  </header>
   <nav>
     <ul>
       <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
+      <li><a href="/about/" title="About us">About</a></li>
     </ul>
   </nav>
     {{ content }}
+
+  <footer>
+    <div class="foot">
+      <p>Copyright John Landers 2024</p>
+    </div>
+  </footer>
 </body>
 </html>
